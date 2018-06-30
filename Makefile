@@ -1,2 +1,2 @@
 all:
-	g++ main.cpp -o parser
+	g++ main.cpp -Irapidxml -o parser
