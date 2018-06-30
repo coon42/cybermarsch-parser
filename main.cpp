@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <iostream>
 #include <rapidxml.hpp>
 #include <rapidxml_print.hpp>
@@ -76,16 +77,41 @@ int main() {
   for (xml_attribute<>* pAttr = pRootNode->first_attribute(); pAttr; pAttr = pAttr->next_attribute()) {
     cout << "Root node has attribute '" << pAttr->name() << "' ";
     cout << "with value '" << pAttr->value() << "'\n";
+
+    if(strcmp(pAttr->name(), "tempo") == 0)
+      eMidi_writeSetTempoMetaEvent(&midi, 0, atoi(pAttr->value()));
   }
 
-  // TODO: set tempo here!
+
+  const int PPQN = 960;
 
   for(xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode; pChordNode = pChordNode->next_sibling()) {
     for(xml_node<>* pNoteNode = pChordNode->first_node(); pNoteNode; pNoteNode = pNoteNode->next_sibling()) {
-      // print(std::cout, *pNode, 0);
+      // eMidi_writeNoteOnEvent(&midi, PPQN, 16, 0, 0);
 
-      printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pNoteNode->value(), mssNote2midiNote(pNoteNode->value()));
+      int loopCount = 0;
+
+      for(const char* p = pNoteNode->value(); *p;) {
+        char pMssNote[3];
+        int numDigits = (*p == '+' || *p == '-') ? 2 : 1;
+
+        memcpy(pMssNote, p, numDigits);
+        pMssNote[numDigits] = '\0';
+
+        uint32_t deltaTime = loopCount++ ? 0: PPQN;
+        uint8_t channel = 0; // TODO: map instruments to channels
+        uint8_t note = mssNote2midiNote(pMssNote);
+
+        printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pMssNote, note);
+
+        if(strcmp(pNoteNode->name(), "cat") == 0)
+          eMidi_writeNoteOnEvent(&midi, deltaTime, channel, note, 127);
+
+        p += numDigits;
+      }
     }
+
+    printf("\n");
   }
 
   eMidi_save(&midi, "cybermarsch.mid");
