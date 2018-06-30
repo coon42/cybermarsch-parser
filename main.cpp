@@ -23,23 +23,16 @@ int main() {
   xml_document<> doc;
   doc.parse<0>(pText);
 
-//  print(std::cout, doc, 0);
-
   xml_node<>* pRootNode = doc.first_node();
   cout << "Name of first node is: " << pRootNode->name() << "\n";
 
-  xml_node<>* pNode = pRootNode->first_node("chord");
+  for(xml_node<>* pNode = pRootNode->first_node("chord"); pNode; pNode = pNode->next_sibling()) {
+    print(std::cout, *pNode, 0);
 
-  if(!pNode) {
-    printf("Error: 'chord' node not found!\n");
-    return -1;
-  }
-
-  print(std::cout, *pNode, 0);
-
-  for (xml_attribute<>* pAttr = pNode->first_attribute(); pAttr; pAttr = pAttr->next_attribute()) {
-    cout << "Node chord has attribute " << pAttr->name() << " ";
-    cout << "with value " << pAttr->value() << "\n";
+    for (xml_attribute<>* pAttr = pNode->first_attribute(); pAttr; pAttr = pAttr->next_attribute()) {
+      cout << "Node chord has attribute " << pAttr->name() << " ";
+      cout << "with value " << pAttr->value() << "\n";
+    }
   }
 
   fclose(p);
