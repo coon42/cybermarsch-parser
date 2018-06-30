@@ -3,22 +3,30 @@
 #include <rapidxml.hpp>
 #include <rapidxml_print.hpp>
 
+extern "C" {
+  #include <midifile.h>
+}
+
 using namespace rapidxml;
 using namespace std;
 
 int main() {
   const char* pFileName = "cybermarsch.xml";
 
-  FILE* p = fopen(pFileName, "r");
+  FILE* pXml = fopen(pFileName, "r");
 
-  if(!p)
+  if(!pXml)
     printf("Error!\n");
 
   printf("Opened %s\n", pFileName);
 
   char pText[60000];
 
-  fread(pText, 1, sizeof(pText), p);
+  fread(pText, 1, sizeof(pText), pXml);
+  fclose(pXml);
+
+  MidiFile midi;
+  eMidi_create(&midi);
 
   xml_document<> doc;
   doc.parse<0>(pText);
@@ -35,7 +43,8 @@ int main() {
     }
   }
 
-  fclose(p);
+  eMidi_save(&midi, "cybermarsch.mid");
+  eMidi_close(&midi);
 
   return 0;
 }
