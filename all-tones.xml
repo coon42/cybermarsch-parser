@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<MarioSequencerSong tempo="120" soundfont="MarioPaintOriginal" measure="4">
+  <chord volume="8">
+    <mario>-A</mario>
+  </chord>
+  <chord volume="8">
+    <mario>A</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+A</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-B</mario>
+  </chord>
+  <chord volume="8">
+    <mario>B</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+B</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-C</mario>
+  </chord>
+  <chord volume="8">
+    <mario>C</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+C</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-D</mario>
+  </chord>
+  <chord volume="8">
+    <mario>D</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+D</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-E</mario>
+  </chord>
+  <chord volume="8">
+    <mario>E</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+E</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-F</mario>
+  </chord>
+  <chord volume="8">
+    <mario>F</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+F</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-G</mario>
+  </chord>
+  <chord volume="8">
+    <mario>G</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+G</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-H</mario>
+  </chord>
+  <chord volume="8">
+    <mario>H</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+H</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-a</mario>
+  </chord>
+  <chord volume="8">
+    <mario>a</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+a</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-b</mario>
+  </chord>
+  <chord volume="8">
+    <mario>b</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+b</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-c</mario>
+  </chord>
+  <chord volume="8">
+    <mario>c</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+c</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-d</mario>
+  </chord>
+  <chord volume="8">
+    <mario>d</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+d</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-e</mario>
+  </chord>
+  <chord volume="8">
+    <mario>e</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+e</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-f</mario>
+  </chord>
+  <chord volume="8">
+    <mario>f</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+f</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-g</mario>
+  </chord>
+  <chord volume="8">
+    <mario>g</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+g</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-h</mario>
+  </chord>
+  <chord volume="8">
+    <mario>h</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+h</mario>
+  </chord>
+  <chord volume="8">
+    <mario>-i</mario>
+  </chord>
+  <chord volume="8">
+    <mario>i</mario>
+  </chord>
+  <chord volume="8">
+    <mario>+i</mario>
+  </chord>
+  <chord volume="8">
+  </chord>
+  <chord volume="8">
+  </chord>
+  <chord volume="8">
+  </chord>
+  <chord volume="8">
+  </chord>
+</MarioSequencerSong>
