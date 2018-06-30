@@ -13,11 +13,11 @@ using namespace std;
 static int mssNote2midiNote(const char* pMssNote) {
   int semiTone = 0;
 
-  if (pMssNote[0] == '-') {
+  if (pMssNote[0] == '+') {
     semiTone = 1;
     pMssNote++;
   }
-  else if (pMssNote[0] == '+') {
+  else if (pMssNote[0] == '-') {
     semiTone = -1;
     pMssNote++;
   }
@@ -83,8 +83,8 @@ int main() {
   for(xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode; pChordNode = pChordNode->next_sibling()) {
     for(xml_node<>* pNoteNode = pChordNode->first_node(); pNoteNode; pNoteNode = pNoteNode->next_sibling()) {
       // print(std::cout, *pNode, 0);
-    
-      printf("%s: %s\n", pNoteNode->name(), pNoteNode->value());
+
+      printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pNoteNode->value(), mssNote2midiNote(pNoteNode->value()));
     }
   }
 
