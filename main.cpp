@@ -87,10 +87,7 @@ int main() {
   const int PPQN = 960;
 
   for (const xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode; pChordNode = pChordNode->next_sibling()) {
-    // TODO: This is a hack to keep correct timings on empty chord nodes. Instead, the delta ticks of the previous events should
-    //       have correct values (start value + duration of empty nodes), to avoid this hack:
-    if (strcmp(pChordNode->name(), "chord") == 0)
-      eMidi_writeControlChangeEvent(&midi, PPQN, 0, 7, 127);
+    bool firstEventOfChord = true;
 
     for (const xml_node<>* pNoteNode = pChordNode->first_node(); pNoteNode; pNoteNode = pNoteNode->next_sibling()) {
       for (const char* p = pNoteNode->value(); *p;) {
@@ -104,17 +101,29 @@ int main() {
 
         printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pMssNote, note);
 
-        if (strcmp(pNoteNode->name(), "cat") == 0)
-          eMidi_writeNoteOnEvent(&midi, 0, 0, note, 127);
+        if (strcmp(pNoteNode->name(), "cat") == 0) {
+          uint32_t deltaTime = firstEventOfChord ? PPQN : 0;
+          eMidi_writeNoteOnEvent(&midi, deltaTime, 0, note, 127);
+          eMidi_writeNoteOffEvent(&midi, 0, 0, note, 127);
+
+          firstEventOfChord = false;
+        }
 
         // if(strcmp(pNoteNode->name(), "heart") == 0)
         //  eMidi_writeNoteOnEvent(&midi, 0, 1, note, 127);
 
         p += numDigits;
       }
+
     }
 
     printf("\n");
+
+    // TODO: This is a hack to keep correct timings on empty chord nodes. Instead, the delta ticks of the previous events should
+    //       have correct values (start value + duration of empty nodes), to avoid this hack:
+
+    uint32_t deltaTime = firstEventOfChord ? PPQN : 0;
+    eMidi_writeControlChangeEvent(&midi, deltaTime, 0, 7, 127);
   }
 
   eMidi_save(&midi, "cybermarsch.mid");
