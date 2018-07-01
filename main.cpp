@@ -55,7 +55,7 @@ int main() {
 
   FILE* pXml = fopen(pFileName, "r");
 
-  if(!pXml)
+  if (!pXml)
     printf("Error!\n");
 
   printf("Opened %s\n", pFileName);
@@ -68,32 +68,32 @@ int main() {
   MidiFile midi;
   eMidi_create(&midi);
   eMidi_writeProgramChangeEvent(&midi, 0, 0, 0);
-  eMidi_writeProgramChangeEvent(&midi, 1, 1, 37);
+  // eMidi_writeProgramChangeEvent(&midi, 1, 1, 37);
 
   xml_document<> doc;
   doc.parse<0>(pText);
 
-  xml_node<>* pRootNode = doc.first_node();
+  const xml_node<>* pRootNode = doc.first_node();
   cout << "Name of first node is: " << pRootNode->name() << "\n";
 
-  for (xml_attribute<>* pAttr = pRootNode->first_attribute(); pAttr; pAttr = pAttr->next_attribute()) {
+  for (const xml_attribute<>* pAttr = pRootNode->first_attribute(); pAttr; pAttr = pAttr->next_attribute()) {
     cout << "Root node has attribute '" << pAttr->name() << "' ";
     cout << "with value '" << pAttr->value() << "'\n";
 
-    if(strcmp(pAttr->name(), "tempo") == 0)
+    if (strcmp(pAttr->name(), "tempo") == 0)
       eMidi_writeSetTempoMetaEvent(&midi, 0, atoi(pAttr->value()));
   }
 
   const int PPQN = 960;
 
-  for(xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode; pChordNode = pChordNode->next_sibling()) {
+  for (const xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode; pChordNode = pChordNode->next_sibling()) {
     // TODO: This is a hack to keep correct timings on empty chord nodes. Instead, the delta ticks of the previous events should
     //       have correct values (start value + duration of empty nodes), to avoid this hack:
-    if(strcmp(pChordNode->name(), "chord") == 0)
-      eMidi_writeNoteOnEvent(&midi, PPQN, 16, 0, 0);
+    if (strcmp(pChordNode->name(), "chord") == 0)
+      eMidi_writeControlChangeEvent(&midi, PPQN, 0, 7, 127);
 
-    for(xml_node<>* pNoteNode = pChordNode->first_node(); pNoteNode; pNoteNode = pNoteNode->next_sibling()) {
-      for(const char* p = pNoteNode->value(); *p;) {
+    for (const xml_node<>* pNoteNode = pChordNode->first_node(); pNoteNode; pNoteNode = pNoteNode->next_sibling()) {
+      for (const char* p = pNoteNode->value(); *p;) {
         char pMssNote[3];
         int numDigits = (*p == '+' || *p == '-') ? 2 : 1;
 
@@ -104,7 +104,7 @@ int main() {
 
         printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pMssNote, note);
 
-        if(strcmp(pNoteNode->name(), "cat") == 0)
+        if (strcmp(pNoteNode->name(), "cat") == 0)
           eMidi_writeNoteOnEvent(&midi, 0, 0, note, 127);
 
         // if(strcmp(pNoteNode->name(), "heart") == 0)
