@@ -82,15 +82,15 @@ int main() {
       eMidi_writeSetTempoMetaEvent(&midi, 0, atoi(pAttr->value()));
   }
 
-
   const int PPQN = 960;
 
   for(xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode; pChordNode = pChordNode->next_sibling()) {
+    // TODO: This is a hack to keep correct timings on empty chord nodes. Instead, the delta ticks of the previous events should
+    //       have correct values (start value + duration of empty nodes), to avoid this hack:
+    if(strcmp(pChordNode->name(), "chord") == 0)
+      eMidi_writeNoteOnEvent(&midi, PPQN, 16, 0, 0);
+
     for(xml_node<>* pNoteNode = pChordNode->first_node(); pNoteNode; pNoteNode = pNoteNode->next_sibling()) {
-      // eMidi_writeNoteOnEvent(&midi, PPQN, 16, 0, 0);
-
-      int loopCount = 0;
-
       for(const char* p = pNoteNode->value(); *p;) {
         char pMssNote[3];
         int numDigits = (*p == '+' || *p == '-') ? 2 : 1;
@@ -98,14 +98,13 @@ int main() {
         memcpy(pMssNote, p, numDigits);
         pMssNote[numDigits] = '\0';
 
-        uint32_t deltaTime = loopCount++ ? 0: PPQN;
         uint8_t channel = 0; // TODO: map instruments to channels
         uint8_t note = mssNote2midiNote(pMssNote);
 
         printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pMssNote, note);
 
         if(strcmp(pNoteNode->name(), "cat") == 0)
-          eMidi_writeNoteOnEvent(&midi, deltaTime, channel, note, 127);
+          eMidi_writeNoteOnEvent(&midi, 0, channel, note, 127);
 
         p += numDigits;
       }
