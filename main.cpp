@@ -68,7 +68,11 @@ int main() {
   MidiFile midi;
   eMidi_create(&midi);
   eMidi_writeProgramChangeEvent(&midi, 0, 0, 0);
-  // eMidi_writeProgramChangeEvent(&midi, 1, 1, 37);
+  eMidi_writeProgramChangeEvent(&midi, 0, 1, 0);
+  eMidi_writeProgramChangeEvent(&midi, 0, 2, 0);
+  eMidi_writeProgramChangeEvent(&midi, 0, 3, 0);
+  eMidi_writeProgramChangeEvent(&midi, 0, 4, 0);
+  eMidi_writeProgramChangeEvent(&midi, 0, 5, 0);
 
   xml_document<> doc;
   doc.parse<0>(pText);
@@ -101,16 +105,31 @@ int main() {
 
         printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pMssNote, note);
 
-        if (strcmp(pNoteNode->name(), "cat") == 0) {
+        auto putNote = [&](int channel) -> void {
           uint32_t deltaTime = firstEventOfChord ? PPQN : 0;
-          eMidi_writeNoteOnEvent(&midi, deltaTime, 0, note, 127);
-          eMidi_writeNoteOffEvent(&midi, 0, 0, note, 127);
+          eMidi_writeNoteOnEvent(&midi, deltaTime, channel, note, 127);
+          eMidi_writeNoteOffEvent(&midi, 0, channel, note, 127);
 
           firstEventOfChord = false;
-        }
+        };
 
-        // if(strcmp(pNoteNode->name(), "heart") == 0)
-        //  eMidi_writeNoteOnEvent(&midi, 0, 1, note, 127);
+        if (strcmp(pNoteNode->name(), "cat") == 0)
+          putNote(0);
+
+        if(strcmp(pNoteNode->name(), "dog") == 0)
+          putNote(1);
+
+        if(strcmp(pNoteNode->name(), "boat") == 0)
+          putNote(2);
+
+        if(strcmp(pNoteNode->name(), "heart") == 0)
+          putNote(3);
+
+        if(strcmp(pNoteNode->name(), "toad") == 0)
+          putNote(4);
+
+        if(strcmp(pNoteNode->name(), "gameboy") == 0)
+          putNote(5);
 
         p += numDigits;
       }
@@ -125,6 +144,8 @@ int main() {
     uint32_t deltaTime = firstEventOfChord ? PPQN : 0;
     eMidi_writeControlChangeEvent(&midi, deltaTime, 0, 7, 127);
   }
+
+  eMidi_writeEndOfTrackMetaEvent(&midi, 0);
 
   eMidi_save(&midi, "cybermarsch.mid");
   eMidi_close(&midi);
