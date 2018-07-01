@@ -107,8 +107,8 @@ int main() {
 
         auto putNote = [&](int channel) -> void {
           uint32_t deltaTime = firstEventOfChord ? PPQN : 0;
-          eMidi_writeNoteOnEvent(&midi, deltaTime, channel, note, 127);
-          eMidi_writeNoteOffEvent(&midi, 0, channel, note, 127);
+          eMidi_writeNoteOnEvent(&midi, 0, channel, note, 127);
+          eMidi_writeNoteOffEvent(&midi, deltaTime, channel, note, 127);
 
           firstEventOfChord = false;
         };
@@ -116,6 +116,10 @@ int main() {
         if (strcmp(pNoteNode->name(), "cat") == 0)
           putNote(0);
 
+// The notes can not be enabled at the same time since the note off events shifts the other notes.
+// TODO: use absolute tick scale
+
+/*
         if(strcmp(pNoteNode->name(), "dog") == 0)
           putNote(1);
 
@@ -130,10 +134,9 @@ int main() {
 
         if(strcmp(pNoteNode->name(), "gameboy") == 0)
           putNote(5);
-
+*/
         p += numDigits;
       }
-
     }
 
     printf("\n");
@@ -141,8 +144,8 @@ int main() {
     // TODO: This is a hack to keep correct timings on empty chord nodes. Instead, the delta ticks of the previous events should
     //       have correct values (start value + duration of empty nodes), to avoid this hack:
 
-    uint32_t deltaTime = firstEventOfChord ? PPQN : 0;
-    eMidi_writeControlChangeEvent(&midi, deltaTime, 0, 7, 127);
+    if (firstEventOfChord)
+      eMidi_writeControlChangeEvent(&midi, PPQN, 0, 7, 127);
   }
 
   eMidi_writeEndOfTrackMetaEvent(&midi, 0);
