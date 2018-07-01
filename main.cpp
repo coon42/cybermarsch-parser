@@ -134,6 +134,12 @@ int main() {
 
         if(strcmp(pNoteNode->name(), "gameboy") == 0)
           putNote(5);
+
+        if(strcmp(pNoteNode->name(), "flower") == 0)
+          putNote(6);
+
+        if(strcmp(pNoteNode->name(), "star") == 0)
+          putNote(7);
 */
         p += numDigits;
       }
