@@ -67,6 +67,8 @@ int main() {
 
   MidiFile midi;
   eMidi_create(&midi);
+  eMidi_writeProgramChangeEvent(&midi, 0, 0, 0);
+  eMidi_writeProgramChangeEvent(&midi, 1, 1, 37);
 
   xml_document<> doc;
   doc.parse<0>(pText);
@@ -98,13 +100,15 @@ int main() {
         memcpy(pMssNote, p, numDigits);
         pMssNote[numDigits] = '\0';
 
-        uint8_t channel = 0; // TODO: map instruments to channels
         uint8_t note = mssNote2midiNote(pMssNote);
 
         printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pMssNote, note);
 
         if(strcmp(pNoteNode->name(), "cat") == 0)
-          eMidi_writeNoteOnEvent(&midi, 0, channel, note, 127);
+          eMidi_writeNoteOnEvent(&midi, 0, 0, note, 127);
+
+        // if(strcmp(pNoteNode->name(), "heart") == 0)
+        //  eMidi_writeNoteOnEvent(&midi, 0, 1, note, 127);
 
         p += numDigits;
       }
