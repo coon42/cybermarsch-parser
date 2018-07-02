@@ -3,6 +3,7 @@
 #include <iostream>
 #include <rapidxml.hpp>
 #include <rapidxml_print.hpp>
+#include <list>
 
 extern "C" {
   #include <midifile.h>
@@ -67,12 +68,14 @@ int main() {
 
   MidiFile midi;
   eMidi_create(&midi);
-  eMidi_writeProgramChangeEvent(&midi, 0, 0, 0);
-  eMidi_writeProgramChangeEvent(&midi, 0, 1, 0);
-  eMidi_writeProgramChangeEvent(&midi, 0, 2, 0);
-  eMidi_writeProgramChangeEvent(&midi, 0, 3, 0);
-  eMidi_writeProgramChangeEvent(&midi, 0, 4, 0);
-  eMidi_writeProgramChangeEvent(&midi, 0, 5, 0);
+  eMidi_writeProgramChangeEvent(&midi, 0, 0, 0); // cat
+  eMidi_writeProgramChangeEvent(&midi, 0, 1, 0); // dog
+  eMidi_writeProgramChangeEvent(&midi, 0, 2, 0); // boat
+  eMidi_writeProgramChangeEvent(&midi, 0, 3, 0); // heart
+  eMidi_writeProgramChangeEvent(&midi, 0, 4, 0); // toad
+  eMidi_writeProgramChangeEvent(&midi, 0, 5, 0); // gameboy
+  eMidi_writeProgramChangeEvent(&midi, 0, 6, 0); // flower
+  eMidi_writeProgramChangeEvent(&midi, 0, 7, 0); // star
 
   xml_document<> doc;
   doc.parse<0>(pText);
@@ -93,6 +96,13 @@ int main() {
   for (const xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode; pChordNode = pChordNode->next_sibling()) {
     bool firstEventOfChord = true;
 
+    struct NoteOffEvent {
+      int channel;
+      int note;
+    };
+
+    list<NoteOffEvent> noteOffEvents;
+
     for (const xml_node<>* pNoteNode = pChordNode->first_node(); pNoteNode; pNoteNode = pNoteNode->next_sibling()) {
       for (const char* p = pNoteNode->value(); *p;) {
         char pMssNote[3];
@@ -108,7 +118,11 @@ int main() {
         auto putNote = [&](int channel) -> void {
           uint32_t deltaTime = firstEventOfChord ? PPQN : 0;
           eMidi_writeNoteOnEvent(&midi, 0, channel, note, 127);
-          eMidi_writeNoteOffEvent(&midi, deltaTime, channel, note, 127);
+
+          NoteOffEvent e;
+          e.channel = channel;
+          e.note = note;
+          noteOffEvents.push_back(e);
 
           firstEventOfChord = false;
         };
@@ -119,7 +133,6 @@ int main() {
 // The notes can not be enabled at the same time since the note off events shifts the other notes.
 // TODO: use absolute tick scale
 
-/*
         if(strcmp(pNoteNode->name(), "dog") == 0)
           putNote(1);
 
@@ -140,9 +153,17 @@ int main() {
 
         if(strcmp(pNoteNode->name(), "star") == 0)
           putNote(7);
-*/
+
         p += numDigits;
       }
+    }
+
+    for(int i = 0; noteOffEvents.size(); ++i) {
+      NoteOffEvent noe = noteOffEvents.back();
+      noteOffEvents.pop_back();
+
+      int deltaTime = i == 0 ? PPQN : 0;
+      eMidi_writeNoteOffEvent(&midi, deltaTime, noe.channel, noe.note, 127);
     }
 
     printf("\n");
