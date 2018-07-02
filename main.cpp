@@ -92,6 +92,7 @@ int main() {
   }
 
   const int PPQN = 960;
+  int curDeltaTime = 0;
 
   for (const xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode; pChordNode = pChordNode->next_sibling()) {
     bool firstEventOfChord = true;
@@ -116,22 +117,19 @@ int main() {
         printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pMssNote, note);
 
         auto putNote = [&](int channel) -> void {
-          uint32_t deltaTime = firstEventOfChord ? PPQN : 0;
-          eMidi_writeNoteOnEvent(&midi, 0, channel, note, 127);
+          eMidi_writeNoteOnEvent(&midi, curDeltaTime, channel, note, 127);
 
           NoteOffEvent e;
           e.channel = channel;
           e.note = note;
           noteOffEvents.push_back(e);
 
+          curDeltaTime = 0;
           firstEventOfChord = false;
         };
 
         if (strcmp(pNoteNode->name(), "cat") == 0)
           putNote(0);
-
-// The notes can not be enabled at the same time since the note off events shifts the other notes.
-// TODO: use absolute tick scale
 
         if(strcmp(pNoteNode->name(), "dog") == 0)
           putNote(1);
@@ -168,11 +166,8 @@ int main() {
 
     printf("\n");
 
-    // TODO: This is a hack to keep correct timings on empty chord nodes. Instead, the delta ticks of the previous events should
-    //       have correct values (start value + duration of empty nodes), to avoid this hack:
-
     if (firstEventOfChord)
-      eMidi_writeControlChangeEvent(&midi, PPQN, 0, 7, 127);
+      curDeltaTime += PPQN;
   }
 
   eMidi_writeEndOfTrackMetaEvent(&midi, 0);
