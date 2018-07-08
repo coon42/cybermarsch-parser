@@ -1,5 +1,3 @@
-#include <rapidxml.hpp>
-#include <rapidxml_print.hpp>
 #include <iostream>
 #include "instruments.h"
 
@@ -58,21 +56,12 @@ int Instrument::mssNote2midiNote(const char* pMssNote) {
 //-------------------------------------------------------------------------------------------------------------
 
 Track::Track(const char* pXmlFileName) {
-  FILE* pXml = fopen(pXmlFileName, "r");
-
-  if (!pXml)
-    printf("Error!\n");
+  if(!openXml(pXmlFileName))
+    return;
 
   printf("Opened %s\n", pXmlFileName);
 
-  char pText[60000];
-
-  fread(pText, 1, sizeof(pText), pXml);
-  fclose(pXml);
-
-  xml_document<> doc;
-  doc.parse<0>(pText);
-  const xml_node<>* pRootNode = doc.first_node();
+  const xml_node<>* pRootNode = xml_.first_node();
   cout << "Name of first node is: " << pRootNode->name() << "\n";
 
   for (const xml_attribute<>* pAttr = pRootNode->first_attribute(); pAttr; pAttr = pAttr->next_attribute()) {
@@ -108,7 +97,7 @@ Track::Track(const char* pXmlFileName) {
         printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pMssNote, note);
 
         auto putNote = [&](int channel) -> void {
-          eMidi_writeNoteOnEvent(&midi, curDeltaTime, channel, note, 127);
+         // eMidi_writeNoteOnEvent(&midi, curDeltaTime, channel, note, 127); // TODO: write absolute time to buffer
 
           NoteOffEvent e;
           e.channel = channel;
@@ -152,7 +141,7 @@ Track::Track(const char* pXmlFileName) {
       noteOffEvents.pop_back();
 
       int deltaTime = i == 0 ? PPQN : 0;
-      eMidi_writeNoteOffEvent(&midi, deltaTime, noe.channel, noe.note, 127);
+      // eMidi_writeNoteOffEvent(&midi, deltaTime, noe.channel, noe.note, 127); // TODO: write absolute time to buffer
     }
 
     printf("\n");
@@ -162,7 +151,24 @@ Track::Track(const char* pXmlFileName) {
   }
 }
 
+bool Track::openXml(const char* pXmlFileName) {
+  FILE* pXml = fopen(pXmlFileName, "r");
+
+  if (!pXml)
+    return false;
+
+  char pText[60000];
+
+  fread(pText, 1, sizeof(pText), pXml);
+  fclose(pXml);
+
+  xml_.parse<0>(pText);
+
+  return true;
+}
+
 void Track::save(const char* pFileName) {
+  MidiFile midi;
   eMidi_create(&midi);
 
   eMidi_writeSetTempoMetaEvent(&midi, 0, tempo_);

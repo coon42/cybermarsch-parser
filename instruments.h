@@ -1,5 +1,7 @@
 #include <string.h>
 #include <list>
+#include <rapidxml.hpp>
+#include <rapidxml_print.hpp>
 
 extern "C" {
   #include <midifile.h>
@@ -24,35 +26,6 @@ private:
 
 };
 
-
-class Dog {
-
-};
-
-class Boat {
-
-};
-
-class Heart {
-
-};
-
-class Toad {
-
-};
-
-class Gameboy {
-
-};
-
-class Flower {
-
-};
-
-class Star {
-
-};
-
 //-------------------------------------------------------------------------------------------------------------
 // Channel
 //-------------------------------------------------------------------------------------------------------------
@@ -73,9 +46,10 @@ public:
   void save(const char* pFileName);
 
 private:
+  bool openXml(const char* pXmlFileName);
+
+  rapidxml::xml_document<> xml_;
   int tempo_{120};
   const int PPQN = 960;
-
-  MidiFile midi;
 };
 
