@@ -2,17 +2,18 @@ all: parser parsernew
 
 clean:
 	rm -rf parser
+	rm -rf parsernew
 	rm -rf instruments.o
 	$(MAKE) clean -C eMIDI
 
-parsernew:
-	g++ parsernew.cpp eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o instruments.o -Irapidxml -IeMIDI/src -o parsernew
+parsernew: eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o instruments.o
+	g++ parsernew.cpp eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o instruments.o -IeMIDI/src -o parsernew
 
-parser: eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o instruments.o
-	g++ main.cpp eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o instruments.o -Irapidxml -IeMIDI/src -o parser
+parser: eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o
+	g++ main.cpp eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o -Irapidxml -IeMIDI/src -o parser
 
 instruments.o: instruments.cpp
-	g++ -c instruments.cpp -o instruments.o
+	g++ -c instruments.cpp -o instruments.o -Irapidxml
 
 eMIDI/obj/midifile.o: eMIDI/src/midifile.c
 	$(MAKE) obj/midifile.o -C eMIDI
