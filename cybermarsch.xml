@@ -1,0 +1,2061 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<MarioSequencerSong tempo="400" soundfont="MarioPaintOriginal" measure="3">
+  <chord volume="16">
+    <cat>c</cat>
+    <dog>D</dog>
+    <boat>b</boat>
+    <heart>-B</heart>
+    <toad>-B</toad>
+    <gameboy>-a</gameboy>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <dog>-B</dog>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>D</gameboy>
+    <heart>D</heart>
+  </chord>
+  <chord volume="16">
+    <heart>-B</heart>
+  </chord>
+  <chord volume="16">
+    <heart>D</heart>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <dog>-E</dog>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <heart>F</heart>
+    <gameboy>F</gameboy>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <heart>F</heart>
+    <dog>-E</dog>
+    <gameboy>H</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <dog>-E</dog>
+    <gameboy>G</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <dog>-E</dog>
+    <gameboy>H</gameboy>
+  </chord>
+  <chord volume="16">
+    <heart>-a</heart>
+    <dog>D</dog>
+    <cat>c</cat>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>-a</gameboy>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="8">
+  </chord>
+  <chord volume="16">
+    <heart>-H</heart>
+    <dog>D</dog>
+    <cat>-a</cat>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>D</gameboy>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <heart>G</heart>
+    <dog>B</dog>
+    <cat>e</cat>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>a</gameboy>
+  </chord>
+  <chord volume="16">
+    <xheart>G</xheart>
+    <xboat>b</xboat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <dog>-E</dog>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>G</gameboy>
+    <heart>G</heart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <heart>a</heart>
+    <dog>D</dog>
+    <gameboy>F</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <heart>b</heart>
+    <dog>C</dog>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>-E</gameboy>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>G</heart>
+    <dog>G</dog>
+    <gameboy>-E</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <dog>C</dog>
+    <gameboy>-E</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <dog>-E</dog>
+    <gameboy>G</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <heart>F</heart>
+    <dog>F</dog>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>H</gameboy>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <heart>H</heart>
+    <dog>-E</dog>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>F</gameboy>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>-a</heart>
+    <dog>D</dog>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>F</gameboy>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+    <xboat>b</xboat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>-a</heart>
+    <dog>-D</dog>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>E</gameboy>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>+G</cat>
+    <flower>+G</flower>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <heart>F</heart>
+    <dog>C</dog>
+    <boat>b</boat>
+    <toad>-B</toad>
+    <gameboy>-E</gameboy>
+  </chord>
+  <chord volume="16">
+    <xboat>b</xboat>
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <heart>F</heart>
+    <toad>-B</toad>
+    <gameboy>F</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <gameboy>G</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <gameboy>H</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>-a</heart>
+    <gameboy>D</gameboy>
+    <dog>-B</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>D</gameboy>
+    <dog>D</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <heart>F</heart>
+    <gameboy>D</gameboy>
+    <dog>D</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-E</cat>
+    <gameboy>C</gameboy>
+    <dog>C</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>D</cat>
+    <heart>-a</heart>
+    <gameboy>-B</gameboy>
+    <dog>-B</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>D</gameboy>
+    <dog>D</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>F</heart>
+    <gameboy>D</gameboy>
+    <dog>D</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>-E</gameboy>
+    <dog>C</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <heart>-a</heart>
+    <gameboy>F</gameboy>
+    <dog>D</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <xheart>-a</xheart>
+    <gameboy>-E</gameboy>
+    <dog>C</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <gameboy>F</gameboy>
+    <dog>D</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <heart>G</heart>
+    <gameboy>G</gameboy>
+    <dog>-E</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>H</heart>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <heart>a</heart>
+    <gameboy>F</gameboy>
+    <dog>D</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <heart>b</heart>
+    <gameboy>-E</gameboy>
+    <dog>C</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>G</heart>
+    <gameboy>-E</gameboy>
+    <dog>C</dog>
+    <toad>-B</toad>
+    <boat>b</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>G</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>a</cat>
+    <gameboy>G</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <gameboy>-E</gameboy>
+    <heart>b</heart>
+    <dog>-E</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>b</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <boat>i</boat>
+    <gameboy>-E</gameboy>
+    <dog>G</dog>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <boat>i</boat>
+    <gameboy>-E</gameboy>
+    <heart>G</heart>
+    <dog>G</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>G</xheart>
+  </chord>
+  <chord volume="16">
+    <boat>i</boat>
+    <gameboy>D</gameboy>
+    <cat>F</cat>
+    <dog>F</dog>
+  </chord>
+  <chord volume="16">
+    <cat>-E</cat>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <gameboy>C</gameboy>
+    <heart>b</heart>
+    <dog>C</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>b</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <boat>i</boat>
+    <gameboy>-E</gameboy>
+    <dog>-E</dog>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <boat>i</boat>
+    <gameboy>-E</gameboy>
+    <heart>G</heart>
+    <dog>-E</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>G</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <boat>i</boat>
+    <gameboy>G</gameboy>
+    <dog>G</dog>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <gameboy>F</gameboy>
+    <heart>F</heart>
+    <dog>F</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <boat>i</boat>
+    <gameboy>H</gameboy>
+    <dog>H</dog>
+  </chord>
+  <chord volume="16">
+    <cat>e</cat>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <gameboy>H</gameboy>
+    <heart>H</heart>
+    <dog>b</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>H</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <boat>i</boat>
+    <gameboy>b</gameboy>
+    <dog>b</dog>
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <gameboy>b</gameboy>
+    <heart>-a</heart>
+    <dog>-a</dog>
+  </chord>
+  <chord volume="16">
+    <heart>H</heart>
+  </chord>
+  <chord volume="16">
+    <heart>G</heart>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <toad>-B</toad>
+    <boat>c</boat>
+    <heart>F</heart>
+    <dog>F</dog>
+    <gameboy>-a</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <gameboy>G</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <gameboy>H</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <gameboy>D</gameboy>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <heart>-a</heart>
+    <dog>-B</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>D</gameboy>
+    <boat>i</boat>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>D</gameboy>
+    <boat>i</boat>
+    <heart>F</heart>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-E</cat>
+    <gameboy>C</gameboy>
+    <boat>i</boat>
+    <dog>C</dog>
+  </chord>
+  <chord volume="16">
+    <cat>D</cat>
+    <gameboy>-B</gameboy>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <heart>-a</heart>
+    <dog>-B</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>D</gameboy>
+    <boat>i</boat>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <gameboy>D</gameboy>
+    <boat>i</boat>
+    <heart>F</heart>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <gameboy>C</gameboy>
+    <boat>i</boat>
+    <dog>C</dog>
+  </chord>
+  <chord volume="16">
+    <cat>a</cat>
+    <gameboy>F</gameboy>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <heart>G</heart>
+    <dog>F</dog>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <gameboy>F</gameboy>
+    <boat>i</boat>
+    <dog>F</dog>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <gameboy>F</gameboy>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <heart>a</heart>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <gameboy>G</gameboy>
+    <boat>i</boat>
+    <dog>-E</dog>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>-E</gameboy>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <heart>b</heart>
+    <dog>C</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>b</xheart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <gameboy>D</gameboy>
+    <boat>b</boat>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <gameboy>-E</gameboy>
+    <dog>-E</dog>
+  </chord>
+  <chord volume="16">
+    <cat>e</cat>
+    <gameboy>H</gameboy>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <heart>F</heart>
+    <dog>F</dog>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>e</cat>
+    <gameboy>H</gameboy>
+    <boat>i</boat>
+    <heart>F</heart>
+    <dog>F</dog>
+  </chord>
+  <chord volume="16">
+    <cat>e</cat>
+    <gameboy>-a</gameboy>
+    <toad>-B</toad>
+    <boat>b</boat>
+    <heart>G</heart>
+    <dog>F</dog>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <gameboy>b</gameboy>
+    <dog>-E</dog>
+    <heart>H</heart>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <gameboy>-a</gameboy>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <dog>D</dog>
+    <heart>-a</heart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>H</gameboy>
+    <boat>i</boat>
+    <dog>A</dog>
+    <heart>b</heart>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <gameboy>D</gameboy>
+    <toad>-B</toad>
+    <boat>b</boat>
+    <dog>-B</dog>
+    <heart>c</heart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <gameboy>F</gameboy>
+    <dog>D</dog>
+    <heart>-a</heart>
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <gameboy>G</gameboy>
+    <toad>-B</toad>
+    <boat>b</boat>
+    <dog>-E</dog>
+    <heart>b</heart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <gameboy>G</gameboy>
+    <heart>d</heart>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>H</gameboy>
+    <toad>-B</toad>
+    <boat>b</boat>
+    <dog>-E</dog>
+    <heart>e</heart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <gameboy>H</gameboy>
+    <heart>e</heart>
+    <dog>F</dog>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <gameboy>F</gameboy>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <dog>D</dog>
+    <heart>-a</heart>
+  </chord>
+  <chord volume="8">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <gameboy>H</gameboy>
+    <dog>H</dog>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <gameboy>-a</gameboy>
+    <dog>-a</dog>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>b</gameboy>
+    <dog>b</dog>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <heart>c</heart>
+    <toad>-B</toad>
+    <boat>i</boat>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>c</xheart>
+    <boat>i</boat>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <boat>i</boat>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <heart>H</heart>
+    <toad>-B</toad>
+    <gameboy>H</gameboy>
+    <boat>i</boat>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>H</xheart>
+    <boat>i</boat>
+    <dog>+F</dog>
+  </chord>
+  <chord volume="16">
+    <boat>i</boat>
+    <dog>H</dog>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <heart>D</heart>
+    <toad>-B</toad>
+    <gameboy>+F</gameboy>
+    <boat>H</boat>
+    <dog>c</dog>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>b</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>G</heart>
+    <toad>-B</toad>
+    <gameboy>-a</gameboy>
+    <boat>i</boat>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>G</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>b</gameboy>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <heart>D</heart>
+    <toad>-B</toad>
+    <gameboy>H</gameboy>
+    <boat>i</boat>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>D</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <gameboy>-a</gameboy>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <gameboy>G</gameboy>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <heart>D</heart>
+    <toad>-B</toad>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>G</heart>
+    <toad>-B</toad>
+    <gameboy>G</gameboy>
+    <dog>G</dog>
+    <boat>H</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>G</xheart>
+    <gameboy>H</gameboy>
+    <cat>H</cat>
+    <dog>H</dog>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <gameboy>-a</gameboy>
+    <dog>-a</dog>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <heart>b</heart>
+    <toad>-B</toad>
+    <gameboy>b</gameboy>
+    <boat>i</boat>
+    <dog>C</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>b</xheart>
+    <boat>i</boat>
+    <dog>C</dog>
+  </chord>
+  <chord volume="16">
+    <boat>i</boat>
+    <dog>C</dog>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>G</heart>
+    <toad>-B</toad>
+    <gameboy>G</gameboy>
+    <boat>i</boat>
+    <dog>C</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>G</xheart>
+    <boat>i</boat>
+    <dog>E</dog>
+  </chord>
+  <chord volume="16">
+    <boat>i</boat>
+    <dog>G</dog>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <heart>C</heart>
+    <toad>-B</toad>
+    <gameboy>E</gameboy>
+    <boat>H</boat>
+    <dog>b</dog>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <dog>-a</dog>
+    <gameboy>-a</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <heart>F</heart>
+    <toad>-B</toad>
+    <gameboy>H</gameboy>
+    <boat>i</boat>
+    <dog>F</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <gameboy>-a</gameboy>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>C</heart>
+    <toad>-B</toad>
+    <gameboy>G</gameboy>
+    <boat>i</boat>
+    <dog>E</dog>
+  </chord>
+  <chord volume="16">
+    <xheart>C</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <heart>C</heart>
+    <toad>-B</toad>
+    <gameboy>H</gameboy>
+    <boat>i</boat>
+    <dog>C</dog>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <heart>F</heart>
+    <toad>-B</toad>
+    <gameboy>F</gameboy>
+    <dog>F</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <heart>C</heart>
+    <dog>C</dog>
+    <flower>C</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>F</heart>
+    <dog>F</dog>
+    <flower>F</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>H</heart>
+    <dog>H</dog>
+    <flower>H</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>b</heart>
+    <dog>b</dog>
+    <cat>FH</cat>
+    <flower>b</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>HF</cat>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>HF</cat>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>H</heart>
+    <dog>H</dog>
+    <cat>HF</cat>
+    <flower>H</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>FH</cat>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>b</heart>
+    <dog>b</dog>
+    <cat>FH</cat>
+    <flower>b</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>F</heart>
+    <dog>F</dog>
+    <cat>HF</cat>
+    <flower>F</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>HF</cat>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>HF</cat>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>F</heart>
+    <dog>F</dog>
+    <cat>HF</cat>
+    <flower>F</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>H</heart>
+    <dog>H</dog>
+    <cat>FH</cat>
+    <flower>H</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>b</heart>
+    <dog>b</dog>
+    <cat>FH</cat>
+    <flower>b</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>-c</heart>
+    <dog>-c</dog>
+    <cat>F-a</cat>
+    <flower>-c</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-aF</cat>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-aF</cat>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>-a</heart>
+    <dog>-a</dog>
+    <cat>F-a</cat>
+    <flower>-a</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-aF</cat>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>-c</heart>
+    <dog>-c</dog>
+    <cat>-aF</cat>
+    <flower>-c</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>b</heart>
+    <dog>b</dog>
+    <cat>FH</cat>
+    <flower>b</flower>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>b</gameboy>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <gameboy>H</gameboy>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>F</gameboy>
+    <star>b</star>
+  </chord>
+  <chord volume="16">
+    <star>c</star>
+  </chord>
+  <chord volume="16">
+    <cat>E</cat>
+    <gameboy>E</gameboy>
+    <star>b</star>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>F</gameboy>
+    <dog>b</dog>
+    <star>c</star>
+  </chord>
+  <chord volume="16">
+    <star>b</star>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <gameboy>G</gameboy>
+    <dog>H</dog>
+    <star>c</star>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <gameboy>F</gameboy>
+    <dog>F</dog>
+    <star>b</star>
+  </chord>
+  <chord volume="16">
+    <star>c</star>
+  </chord>
+  <chord volume="16">
+    <cat>+G</cat>
+    <gameboy>E</gameboy>
+    <dog>E</dog>
+    <star>b</star>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <gameboy>F</gameboy>
+    <dog>F</dog>
+    <heart>b</heart>
+    <star>c</star>
+  </chord>
+  <chord volume="16">
+    <star>b</star>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <gameboy>G</gameboy>
+    <dog>G</dog>
+    <heart>H</heart>
+    <star>c</star>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>H</gameboy>
+    <dog>F</dog>
+    <heart>F</heart>
+    <star>b</star>
+  </chord>
+  <chord volume="16">
+    <star>d</star>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <gameboy>-a</gameboy>
+    <dog>G</dog>
+    <star>e</star>
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <gameboy>b</gameboy>
+    <dog>H</dog>
+    <heart>C</heart>
+    <star>f</star>
+  </chord>
+  <chord volume="16">
+    <star>g</star>
+  </chord>
+  <chord volume="16">
+    <cat>d</cat>
+    <gameboy>-a</gameboy>
+    <dog>-a</dog>
+    <star>-h</star>
+  </chord>
+  <chord volume="16">
+    <cat>e</cat>
+    <gameboy>H</gameboy>
+    <dog>H</dog>
+    <heart>F</heart>
+    <star>i</star>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>C</gameboy>
+    <dog>A</dog>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>+C</gameboy>
+    <dog>A</dog>
+  </chord>
+  <chord volume="16">
+    <gameboy>D</gameboy>
+    <heart>-a</heart>
+    <dog>-B</dog>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>F-a</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>-a</gameboy>
+    <heart>F</heart>
+    <dog>D</dog>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>F-a</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>H</gameboy>
+    <heart>-a</heart>
+    <dog>D</dog>
+    <cat>F-a</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-aF</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>G</gameboy>
+    <heart>F</heart>
+    <dog>D</dog>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-aF</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>D</gameboy>
+    <heart>-a</heart>
+    <dog>-B</dog>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>F-a</cat>
+  </chord>
+  <chord volume="16">
+    <heart>F</heart>
+    <cat>F-a</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-aF</cat>
+  </chord>
+  <chord volume="16">
+    <heart>-a</heart>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+    <cat>-aF</cat>
+  </chord>
+  <chord volume="16">
+    <cat>-aF</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>G</gameboy>
+    <heart>F</heart>
+    <dog>A</dog>
+    <cat>GH</cat>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <dog>A</dog>
+    <cat>bH</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>-B</gameboy>
+    <heart>-a</heart>
+    <dog>-B</dog>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>C</gameboy>
+    <heart>H</heart>
+    <dog>F</dog>
+    <cat>FC</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>D</gameboy>
+    <heart>G</heart>
+    <dog>-a</dog>
+    <cat>FD</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="8">
+  </chord>
+  <chord volume="8">
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <heart>c</heart>
+    <dog>F</dog>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>C</gameboy>
+    <heart>e</heart>
+    <dog>C</dog>
+    <cat>FH</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <cat>FH</cat>
+  </chord>
+  <chord volume="16">
+    <heart>e</heart>
+    <cat>HF</cat>
+  </chord>
+  <chord volume="16">
+    <heart>b</heart>
+    <cat>G-E</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <heart>b</heart>
+    <cat>-EG</cat>
+  </chord>
+  <chord volume="16">
+    <heart>b</heart>
+    <cat>-EG</cat>
+  </chord>
+  <chord volume="16">
+    <heart>F</heart>
+    <cat>FH</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <heart>b</heart>
+    <cat>FH</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <gameboy>C</gameboy>
+    <heart>-d</heart>
+    <dog>A</dog>
+    <cat>FH</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>D</gameboy>
+    <heart>c</heart>
+    <dog>B</dog>
+    <cat>Fa</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>-E</gameboy>
+    <heart>b</heart>
+    <dog>C</dog>
+    <cat>-a-E</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>b</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-a-E</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <heart>b</heart>
+    <dog>C</dog>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>b</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>-aF</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>C</gameboy>
+    <heart>F</heart>
+    <dog>A</dog>
+    <cat>bF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>Fb</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>-E</gameboy>
+    <heart>F</heart>
+    <dog>A</dog>
+    <cat>bF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>Fb</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>D</gameboy>
+    <heart>-a</heart>
+    <dog>-B</dog>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>+C</gameboy>
+    <dog>-B</dog>
+    <cat>E-a</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>D</gameboy>
+    <heart>F</heart>
+    <dog>-B</dog>
+    <cat>-aF</cat>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>-E</gameboy>
+    <dog>C</dog>
+    <cat>FH</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <heart>-a</heart>
+    <dog>D</dog>
+    <cat>-aF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>F-a</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>D</gameboy>
+    <heart>G</heart>
+    <dog>G</dog>
+    <cat>cG</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <dog>-B</dog>
+  </chord>
+  <chord volume="16">
+    <gameboy>E</gameboy>
+    <heart>b</heart>
+    <dog>C</dog>
+    <cat>Eb</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>G</gameboy>
+    <heart>-a</heart>
+    <dog>E</dog>
+    <cat>EG</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>-a</gameboy>
+    <heart>G</heart>
+    <dog>E</dog>
+    <cat>G-a</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>b</gameboy>
+    <heart>C</heart>
+    <dog>E</dog>
+    <cat>-aG</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="8">
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <heart>F</heart>
+    <dog>F</dog>
+    <cat>HF</cat>
+    <toad>-B</toad>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <dog>F</dog>
+    <cat>F</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>G</gameboy>
+    <dog>G</dog>
+    <cat>G</cat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <gameboy>+G</gameboy>
+    <dog>+G</dog>
+    <cat>+G</cat>
+  </chord>
+  <chord volume="16">
+    <gameboy>H</gameboy>
+    <dog>H</dog>
+    <cat>H</cat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>C</cat>
+    <heart>F</heart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>+C</cat>
+  </chord>
+  <chord volume="16">
+    <cat>D</cat>
+    <heart>-a</heart>
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>F</heart>
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <heart>-a</heart>
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>F</heart>
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>D</cat>
+    <heart>-a</heart>
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>H</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>F</heart>
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>-a</heart>
+    <dog>-a</dog>
+    <gameboy>F</gameboy>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+    <dog>-a</dog>
+    <gameboy>F</gameboy>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <dog>-a</dog>
+    <gameboy>F</gameboy>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>F</heart>
+    <dog>H</dog>
+    <gameboy>G</gameboy>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>F</xheart>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>H</gameboy>
+    <dog>b</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>-a</heart>
+    <gameboy>-a</gameboy>
+    <dog>c</dog>
+    <toad>-B</toad>
+    <boat>H</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>F</gameboy>
+    <dog>b</dog>
+  </chord>
+  <chord volume="16">
+    <cat>D</cat>
+    <heart>-H</heart>
+    <gameboy>D</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>H</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>F</gameboy>
+    <dog>b</dog>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>F</heart>
+    <gameboy>-a</gameboy>
+    <dog>c</dog>
+    <toad>-B</toad>
+    <boat>H</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>-a</heart>
+    <gameboy>-H</gameboy>
+    <dog>c</dog>
+    <toad>-B</toad>
+    <boat>H</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-d</cat>
+    <heart>-E</heart>
+    <gameboy>G</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-E</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>+F</gameboy>
+    <dog>H</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>-a</heart>
+    <gameboy>G</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+    <gameboy>H</gameboy>
+    <dog>-E</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>-E</heart>
+    <gameboy>-a</gameboy>
+    <dog>-E</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-E</xheart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <boat>H</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>-E</heart>
+    <gameboy>-a</gameboy>
+    <dog>-E</dog>
+    <flower>-a-d</flower>
+  </chord>
+  <chord volume="16">
+    <flower>-a-d</flower>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <flower>-a-d</flower>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <flower>-a-d</flower>
+  </chord>
+  <chord volume="16">
+    <flower>G-a</flower>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <flower>-a-d</flower>
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <heart>E</heart>
+    <gameboy>-a</gameboy>
+    <dog>C</dog>
+    <flower>df</flower>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <heart>F</heart>
+    <gameboy>-a</gameboy>
+    <dog>D</dog>
+    <flower>c-a</flower>
+  </chord>
+  <chord volume="16">
+    <flower>c-a</flower>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <flower>c-a</flower>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>-H</heart>
+    <gameboy>-a</gameboy>
+    <dog>F</dog>
+    <flower>c-a</flower>
+  </chord>
+  <chord volume="16">
+    <flower>-aF</flower>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <flower>c-a</flower>
+  </chord>
+  <chord volume="16">
+    <cat>e</cat>
+    <heart>G</heart>
+    <gameboy>a</gameboy>
+    <dog>F</dog>
+    <flower>ea</flower>
+  </chord>
+  <chord volume="16">
+    <xheart>G</xheart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>G</heart>
+    <gameboy>G</gameboy>
+    <dog>-E</dog>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>F</gameboy>
+    <dog>D</dog>
+  </chord>
+  <chord volume="16">
+    <cat>-E</cat>
+    <heart>b</heart>
+    <gameboy>-E</gameboy>
+    <dog>C</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>D</cat>
+    <gameboy>D</gameboy>
+    <dog>-B</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-E</cat>
+    <heart>-a</heart>
+    <gameboy>-E</gameboy>
+    <dog>C</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <gameboy>F</gameboy>
+    <dog>D</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+    <heart>H</heart>
+    <gameboy>G</gameboy>
+    <dog>-E</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+    <gameboy>H</gameboy>
+    <dog>F</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>F</heart>
+    <gameboy>-a</gameboy>
+    <dog>G</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>b</cat>
+    <gameboy>b</gameboy>
+    <dog>H</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>c</cat>
+    <heart>-a</heart>
+    <gameboy>-a</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <xheart>-a</xheart>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+    <cat>-G</cat>
+    <heart>-d</heart>
+    <gameboy>-G</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <heart>-d</heart>
+    <gameboy>-G</gameboy>
+    <dog>-a</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>-G</cat>
+    <heart>-d</heart>
+    <gameboy>-G</gameboy>
+    <dog>-a</dog>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>F</cat>
+    <heart>-a</heart>
+    <gameboy>F</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>i</boat>
+  </chord>
+  <chord volume="16">
+    <cat>G</cat>
+  </chord>
+  <chord volume="16">
+    <cat>H</cat>
+  </chord>
+  <chord volume="16">
+    <cat>-a</cat>
+    <heart>-a</heart>
+    <gameboy>-B</gameboy>
+    <dog>-a</dog>
+    <toad>-B</toad>
+    <boat>H</boat>
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+  <chord volume="16">
+  </chord>
+</MarioSequencerSong>
+
