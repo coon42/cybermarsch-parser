@@ -6,7 +6,7 @@ clean:
 	$(MAKE) clean -C eMIDI
 
 parsernew:
-	g++ parsernew.cpp eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o instruments.o -Irapidxml -IeMIDI/src -o parser
+	g++ parsernew.cpp eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o instruments.o -Irapidxml -IeMIDI/src -o parsernew
 
 parser: eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o instruments.o
 	g++ main.cpp eMIDI/obj/midifile.o eMIDI/obj/emidi_linux.o instruments.o -Irapidxml -IeMIDI/src -o parser
