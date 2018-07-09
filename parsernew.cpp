@@ -1,4 +1,4 @@
-#include "instruments.h"
+#include "amsparser.h"
 
 int main() {
   const char* pXmlFileName = "cybermarsch.xml";
