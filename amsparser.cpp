@@ -4,9 +4,9 @@
 using namespace rapidxml;
 using namespace std;
 
-//-------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 // Instrument
-//-------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 
 int Instrument::mssNote2midiNote(const char* pMssNote) {
   int semiTone = 0;
@@ -47,13 +47,13 @@ int Instrument::mssNote2midiNote(const char* pMssNote) {
   return char2Note(pMssNote[0]) + semiTone;
 }
 
-//-------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 // Channel
-//-------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 
-//-------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 // Track
-//-------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 
 Track::Track(const char* pXmlFileName) {
   if(!openXml(pXmlFileName))
@@ -64,7 +64,8 @@ Track::Track(const char* pXmlFileName) {
   const xml_node<>* pRootNode = xml_.first_node();
   cout << "Name of first node is: " << pRootNode->name() << "\n";
 
-  for (const xml_attribute<>* pAttr = pRootNode->first_attribute(); pAttr; pAttr = pAttr->next_attribute()) {
+  for (const xml_attribute<>* pAttr = pRootNode->first_attribute(); pAttr;
+      pAttr = pAttr->next_attribute()) {
     cout << "Root node has attribute '" << pAttr->name() << "' ";
     cout << "with value '" << pAttr->value() << "'\n";
 
@@ -74,7 +75,8 @@ Track::Track(const char* pXmlFileName) {
 
   int curDeltaTime = 0;
 
-  for (const xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode; pChordNode = pChordNode->next_sibling()) {
+  for (const xml_node<>* pChordNode = pRootNode->first_node("chord"); pChordNode;
+      pChordNode = pChordNode->next_sibling()) {
     bool firstEventOfChord = true;
 
     struct NoteOffEvent {
@@ -84,7 +86,8 @@ Track::Track(const char* pXmlFileName) {
 
     list<NoteOffEvent> noteOffEvents;
 
-    for (const xml_node<>* pNoteNode = pChordNode->first_node(); pNoteNode; pNoteNode = pNoteNode->next_sibling()) {
+    for (const xml_node<>* pNoteNode = pChordNode->first_node(); pNoteNode;
+        pNoteNode = pNoteNode->next_sibling()) {
       for (const char* p = pNoteNode->value(); *p;) {
         char pMssNote[3];
         int numDigits = (*p == '+' || *p == '-') ? 2 : 1;
@@ -97,7 +100,8 @@ Track::Track(const char* pXmlFileName) {
         printf("%s: %s -> Midi Note: %d\n", pNoteNode->name(), pMssNote, note);
 
         auto putNote = [&](int channel) -> void {
-         // eMidi_writeNoteOnEvent(&midi, curDeltaTime, channel, note, 127); // TODO: write absolute time to buffer
+         // TODO: write absolute time to buffer
+         // eMidi_writeNoteOnEvent(&midi, curDeltaTime, channel, note, 127);
 
           NoteOffEvent e;
           e.channel = channel;
@@ -141,7 +145,8 @@ Track::Track(const char* pXmlFileName) {
       noteOffEvents.pop_back();
 
       int deltaTime = i == 0 ? PPQN : 0;
-      // eMidi_writeNoteOffEvent(&midi, deltaTime, noe.channel, noe.note, 127); // TODO: write absolute time to buffer
+      // TODO: write absolute time to buffer
+      // eMidi_writeNoteOffEvent(&midi, deltaTime, noe.channel, noe.note, 127);
     }
 
     printf("\n");
