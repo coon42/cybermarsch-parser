@@ -48,7 +48,9 @@ static int mssNote2midiNote(const char* pMssNote) {
     return 0;
   };
 
-  return char2Note(pMssNote[0]) + semiTone;
+  const int octaves = -3;
+
+  return char2Note(pMssNote[0]) + semiTone + 8 * octaves;
 }
 
 int main() {
@@ -68,14 +70,14 @@ int main() {
 
   MidiFile midi;
   eMidi_create(&midi);
-  eMidi_writeProgramChangeEvent(&midi, 0, 0, 0); // cat
-  eMidi_writeProgramChangeEvent(&midi, 0, 1, 0); // dog
-  eMidi_writeProgramChangeEvent(&midi, 0, 2, 0); // boat
-  eMidi_writeProgramChangeEvent(&midi, 0, 3, 0); // heart
-  eMidi_writeProgramChangeEvent(&midi, 0, 4, 0); // toad
-  eMidi_writeProgramChangeEvent(&midi, 0, 5, 0); // gameboy
-  eMidi_writeProgramChangeEvent(&midi, 0, 6, 0); // flower
-  eMidi_writeProgramChangeEvent(&midi, 0, 7, 0); // star
+  eMidi_writeProgramChangeEvent(&midi, 0, 0,  7);  // cat
+  eMidi_writeProgramChangeEvent(&midi, 0, 1,  6);  // dog
+  eMidi_writeProgramChangeEvent(&midi, 0, 2, 12);  // boat
+  eMidi_writeProgramChangeEvent(&midi, 0, 3, 14);  // heart
+  eMidi_writeProgramChangeEvent(&midi, 0, 4,  1);  // toad
+  eMidi_writeProgramChangeEvent(&midi, 0, 5,  5);  // gameboy
+  eMidi_writeProgramChangeEvent(&midi, 0, 6,  4);  // flower
+  eMidi_writeProgramChangeEvent(&midi, 0, 7,  3);  // star
 
   xml_document<> doc;
   doc.parse<0>(pText);
