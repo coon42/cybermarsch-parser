@@ -174,9 +174,8 @@ int main() {
 
   eMidi_writeEndOfTrackMetaEvent(&midi, 0);
 
-  eMidi_save(&midi, "cybermarsch.mid");
+  eMidi_save(&midi, "cybermarsch_old.mid");
   eMidi_close(&midi);
 
   return 0;
 }
-

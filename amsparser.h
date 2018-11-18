@@ -52,4 +52,3 @@ private:
   int tempo_{120};
   const int PPQN = 960;
 };
-

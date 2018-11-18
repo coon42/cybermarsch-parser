@@ -44,7 +44,9 @@ int Instrument::mssNote2midiNote(const char* pMssNote) {
     return 0;
   };
 
-  return char2Note(pMssNote[0]) + semiTone;
+  const int octaves = -3;
+
+  return char2Note(pMssNote[0]) + semiTone + 8 * octaves;
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -56,8 +58,22 @@ int Instrument::mssNote2midiNote(const char* pMssNote) {
 //--------------------------------------------------------------------------------------------------
 
 Track::Track(const char* pXmlFileName) {
-  if(!openXml(pXmlFileName))
+  if (!openXml(pXmlFileName))
     return;
+
+  // TODO: remove:
+  MidiFile midi;
+  eMidi_create(&midi);
+
+  eMidi_writeProgramChangeEvent(&midi, 0, 0,  7);   // cat
+  eMidi_writeProgramChangeEvent(&midi, 0, 1,  6);   // dog
+  eMidi_writeProgramChangeEvent(&midi, 0, 2, 12);  // boat
+  eMidi_writeProgramChangeEvent(&midi, 0, 3, 14);  // heart
+  eMidi_writeProgramChangeEvent(&midi, 0, 4,  1);   // toad
+  eMidi_writeProgramChangeEvent(&midi, 0, 5,  5);   // gameboy
+  eMidi_writeProgramChangeEvent(&midi, 0, 6,  4);   // flower
+  eMidi_writeProgramChangeEvent(&midi, 0, 7,  3);   // star
+  // --
 
   printf("Opened %s\n", pXmlFileName);
 
@@ -72,6 +88,10 @@ Track::Track(const char* pXmlFileName) {
     if (strcmp(pAttr->name(), "tempo") == 0)
       tempo_ = atoi(pAttr->value());
   }
+
+  // TODO: remove:
+  eMidi_writeSetTempoMetaEvent(&midi, 0, tempo_);
+  // --
 
   int curDeltaTime = 0;
 
@@ -101,7 +121,7 @@ Track::Track(const char* pXmlFileName) {
 
         auto putNote = [&](int channel) -> void {
          // TODO: write absolute time to buffer
-         // eMidi_writeNoteOnEvent(&midi, curDeltaTime, channel, note, 127);
+         eMidi_writeNoteOnEvent(&midi, curDeltaTime, channel, note, 127);
 
           NoteOffEvent e;
           e.channel = channel;
@@ -146,7 +166,7 @@ Track::Track(const char* pXmlFileName) {
 
       int deltaTime = i == 0 ? PPQN : 0;
       // TODO: write absolute time to buffer
-      // eMidi_writeNoteOffEvent(&midi, deltaTime, noe.channel, noe.note, 127);
+      eMidi_writeNoteOffEvent(&midi, deltaTime, noe.channel, noe.note, 127);
     }
 
     printf("\n");
@@ -154,6 +174,13 @@ Track::Track(const char* pXmlFileName) {
     if (firstEventOfChord)
       curDeltaTime += PPQN;
   }
+
+  // TODO: remove:
+  eMidi_writeEndOfTrackMetaEvent(&midi, 0);
+
+  eMidi_save(&midi, "cybermarsch.mid");
+  eMidi_close(&midi);
+  // --
 }
 
 bool Track::openXml(const char* pXmlFileName) {
@@ -173,18 +200,20 @@ bool Track::openXml(const char* pXmlFileName) {
 }
 
 void Track::save(const char* pFileName) {
+  /*
+
   MidiFile midi;
   eMidi_create(&midi);
 
   eMidi_writeSetTempoMetaEvent(&midi, 0, tempo_);
-  eMidi_writeProgramChangeEvent(&midi, 0, 0, 0); // cat
-  eMidi_writeProgramChangeEvent(&midi, 0, 1, 0); // dog
-  eMidi_writeProgramChangeEvent(&midi, 0, 2, 0); // boat
-  eMidi_writeProgramChangeEvent(&midi, 0, 3, 0); // heart
-  eMidi_writeProgramChangeEvent(&midi, 0, 4, 0); // toad
-  eMidi_writeProgramChangeEvent(&midi, 0, 5, 0); // gameboy
-  eMidi_writeProgramChangeEvent(&midi, 0, 6, 0); // flower
-  eMidi_writeProgramChangeEvent(&midi, 0, 7, 0); // star
+  eMidi_writeProgramChangeEvent(&midi, 0, 0,  7);   // cat
+  eMidi_writeProgramChangeEvent(&midi, 0, 1,  6);   // dog
+  eMidi_writeProgramChangeEvent(&midi, 0, 2, 12);  // boat
+  eMidi_writeProgramChangeEvent(&midi, 0, 3, 14);  // heart
+  eMidi_writeProgramChangeEvent(&midi, 0, 4,  1);   // toad
+  eMidi_writeProgramChangeEvent(&midi, 0, 5,  5);   // gameboy
+  eMidi_writeProgramChangeEvent(&midi, 0, 6,  4);   // flower
+  eMidi_writeProgramChangeEvent(&midi, 0, 7,  3);   // star
 
   // TODO: - convert absolute times in relative times
   //       - write NoteOn noteOff events here
@@ -193,5 +222,6 @@ void Track::save(const char* pFileName) {
 
   eMidi_save(&midi, "cybermarsch.mid");
   eMidi_close(&midi);
-}
 
+  */
+}
